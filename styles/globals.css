@@ -1,56 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f2f2f2;
-  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  background: #020B1B;
+  color: white;
   font-family: "Poppins";
 }
 
 a {
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
-.content {
+p,
+h2 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.container-relative {
+  position: relative;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: center;
+.container-left {
+  width: 50%;
 }
 
-nav a {
-  margin-left: 12px;
+.container-right {
+  width: 50%;
+  margin-left: 50px;
+}
+
+nav {
+  background-color: #020B1B !important;
 }
 
 nav .logo {
   margin: 0 0;
   margin-right: auto;
-  font-weight: 900;
-  font-size: 35px;
-  font-family: "Monoton";
-  color: #2F66A9;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: 'Concert One', cursive;  
+  color: white;
 }
 
-footer {
-  display: block;
+.footer-container {
   text-align: center;
   padding: 30px 0;
   margin-top: 60px;
-  color: #777;
+  color: #020F1D;
   border-top: 1px solid #eaeaea;
+  background-color: white;
+}
+.footer-header {
+  font-weight: 700;
+  font-size: 20px;
+  color: #020B1B;
+}
+.footer-centered-container {
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+.footer-centered-container button {
+  margin: 7px 10px;
+  font-weight: 600;
+}
+.github-button {
+  background-color: #111827 !important;
+}
+.gmail-button {
+  background-color: #B91C1C !important;
+}
+.facebook-button {
+  background-color: #0369A1 !important;
 }
 
 .not-found {
   text-align: center;
 }
-
 .not-found a {
   color: #4979ff;
   text-decoration: underline;
