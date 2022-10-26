@@ -8,6 +8,7 @@ import Toolbar from "@mui/material/Toolbar";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
+import WhatIDo from "../components/WhatIDo";
 
 const Main = () => {
     useEffect(() => {
@@ -31,6 +32,7 @@ const Main = () => {
             <Box component="main" sx={{ p: 3 }}>
                 <Toolbar />
                 <Home />
+                <WhatIDo />
             </Box>
             <Footer />
         </div>

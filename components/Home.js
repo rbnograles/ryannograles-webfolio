@@ -12,7 +12,9 @@ const Home = () => {
                 <p>
                     A <b>Software Engineer</b> based in the Philippines.
                 </p>
-                <Button variant="contained">Learn More</Button>
+                <Button className="outline-btn" variant="outlined">
+                    Learn more
+                </Button>
             </div>
             <div data-aos="fade-left" className="container-right">
                 <Image

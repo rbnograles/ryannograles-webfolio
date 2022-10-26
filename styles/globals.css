@@ -23,6 +23,9 @@ h2 {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
 }
+.h-100 {
+  height: 100vh;
+}
 nav {
   background-color: var(--bg-color) !important;
 }
@@ -43,6 +46,20 @@ nav .logo {
   max-width: 1280px;
   margin: 50px auto;
 }
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  max-width: 1580px;
+  margin: 20px auto;
+}
+.d-flex section {
+  margin: 30px;
+}
+.justify-content-center {
+  justify-content: center;
+  align-items: center;
+}
+
 .container-left {
   margin-top: 5%;
   justify-content: center;
@@ -87,7 +104,14 @@ nav .logo {
   width: 50%;
   margin-left: 20%;
 }
-
+.outline-btn{
+  color: white;
+  border-color: white;
+}
+.outline-btn:hover {
+  border-color: var(--color-highlight);
+  color: var(--color-highlight);
+}
 
 
 .footer-container {
@@ -129,11 +153,18 @@ nav .logo {
   text-decoration: underline;
 }
 
-@keyframes animate {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
+.intro-left {
+  max-width: 500px;
+}
+.intro-left h1 {
+  font-size: 50px;
+}
+.highlight {
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+.box-icon-left-container {
+  padding: 10px 20px;
+  text-align: center;
+  align-self: center;
 }
