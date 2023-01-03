@@ -44,7 +44,7 @@ const Footer = () => {
                     Twitter
                 </Button>
             </div>
-            <p>Copyright &copy; 2022. All rights reserved. Ryan B. Nograles.</p>
+            <p>Copyright &copy; 2023. All rights reserved. Ryan B. Nograles.</p>
             <p>
                 Powered by{" "}
                 <span>
