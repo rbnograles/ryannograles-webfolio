@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FrontendCard from "./utils/FrontendCard";
 import BackendCard from "./utils/BackendCard";
 
@@ -11,7 +10,8 @@ const WhatIDo = () => {
                     I am a{" "}
                     <span className="highlight">senior software engineer</span>{" "}
                     at accenture, working as a full stack engineer. I am
-                    passionate about learning and building system architecture.
+                    passionate about learning web technologies, the cloud, and
+                    building system architecture.
                 </p>
             </section>
             <section>

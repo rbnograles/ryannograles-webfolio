@@ -10,7 +10,11 @@ const FrontendCard = () => {
     const theme = useTheme();
 
     return (
-        <Card sx={{ display: "flex", padding: 2, margin: 2 }}>
+        <Card
+            sx={{ display: "flex", padding: 2, margin: 2 }}
+            data-aos="fade-left"
+            data-aos-offset="500"
+        >
             <div className="box-icon-left-container">
                 <SiNextdotjs style={{ height: 70, width: 70 }} />
             </div>

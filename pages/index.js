@@ -9,6 +9,7 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
 import WhatIDo from "../components/WhatIDo";
+import Experience from "../components/Experience";
 
 const Main = () => {
     useEffect(() => {
@@ -33,6 +34,7 @@ const Main = () => {
                 <Toolbar />
                 <Home />
                 <WhatIDo />
+                <Experience />
             </Box>
             <Footer />
         </div>

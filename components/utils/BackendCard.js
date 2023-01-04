@@ -10,7 +10,10 @@ const BackendCard = () => {
     const theme = useTheme();
 
     return (
-        <Card sx={{ display: "flex", padding: 2, margin: 2 }}>
+        <Card
+            sx={{ display: "flex", padding: 2, margin: 2 }}
+            data-aos="fade-left"
+        >
             <div className="box-icon-left-container">
                 <SiNestjs style={{ height: 70, width: 70 }} />
             </div>

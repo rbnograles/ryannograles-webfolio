@@ -1,20 +1,28 @@
 import Image from "next/image";
-import { Button } from "@mui/material";
 
 const Home = () => {
     return (
         <div className="flex-row-container">
             <div data-aos="fade-right" className="container-left">
-                <p>Hi, I am</p>
+                <p>Hi there, I am</p>
                 <div className="line"></div>
                 <h1>Ryan</h1>
                 <h1>Nograles.</h1>
                 <p>
                     A <b>Software Engineer</b> based in the Philippines.
                 </p>
-                <Button className="outline-btn" variant="outlined">
-                    Learn more
-                </Button>
+                <span>
+                    - I have 3 years experience working as a software engineer.
+                </span>
+                <br />
+                <span>
+                    - A <b>Google Cloud Certified Associate Cloud Engineer</b>.
+                </span>
+                <br />
+                <span>
+                    - Working for Accenture as an{" "}
+                    <b>App Development Senior Analyst</b>.
+                </span>
             </div>
             <div data-aos="fade-left" className="container-right">
                 <Image
@@ -25,6 +33,7 @@ const Home = () => {
                     height="500px"
                 />
             </div>
+            <a id="scroll-btn"></a>
         </div>
     );
 };
