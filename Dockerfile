@@ -4,12 +4,15 @@ FROM node:16.18.1-alpine
 # Change directory to the app directory
 WORKDIR /usr/app
 
-# Copy application dependency manifests to the container image
-# A wildcard is used to ensure copying both package.json and yark.lock (when available)
-# Copying this first prevents to re-running yarn install on every code change
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure copying both package.json AND package-lock.json (when available).
+# Copying this first prevents re-running npm install on every code change.
 COPY . .
 
-RUN yarn build
+# Install production dependencies.
+# If you add a package-lock.json, speed your build by switching to 'npm ci'.
+RUN npm ci --only=production
 
-# Start the application commans
-CMD ["yarn", "start"]
+RUN npm run build
+
+CMD ["npm", "start"]
