@@ -1,5 +1,5 @@
 # Initialized base image
-FROM node:16.18.1-alpine
+FROM node:alpine
 
 # Change directory to the app directory
 WORKDIR /usr/app
