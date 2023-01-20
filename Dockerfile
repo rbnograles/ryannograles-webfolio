@@ -9,6 +9,8 @@ WORKDIR /usr/app
 # Copying this first prevents re-running npm install on every code change.
 COPY . .
 
+RUN npm ci --only=production
+
 RUN npm run build
 
 CMD ["npm", "start"]
