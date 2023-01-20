@@ -1,4 +1,4 @@
-import { FaClock, FaCaretDown } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa";
 
 const Experience = () => {
     return (
