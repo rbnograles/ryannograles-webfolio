@@ -20,8 +20,7 @@ const Home = () => {
                 </span>
                 <br />
                 <span>
-                    - Working for Accenture as an{" "}
-                    <b>App Development Senior Analyst</b>.
+                    - Working for Accenture as a <b>Software Engineer</b>.
                 </span>
             </div>
             <div data-aos="fade-left" className="container-right">
@@ -29,8 +28,8 @@ const Home = () => {
                     src="/personWithLogos.png"
                     className="hero-image"
                     alt="Person with Logos"
-                    width="500px"
-                    height="500px"
+                    width={500}
+                    height={500}
                 />
             </div>
             <a id="scroll-btn"></a>

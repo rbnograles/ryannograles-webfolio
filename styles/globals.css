@@ -40,6 +40,7 @@ nav .logo {
 }
 .container-relative {
   position: relative;
+  width: 100%;
 }
 .flex-row-container {
   display: flex;
@@ -231,41 +232,6 @@ a#scroll-btn:after {
   margin: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  .flex-row-container {
-    height: 100%;
-  }
-  a#scroll-btn {
-    display: none;
-  }
-  .d-flex {
-    flex-direction: column !important;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .flex-row-container {
-    height: 100%;
-    padding-left: 30px;
-  }
-  .flex-row-container .container-left {
-    width: 100%;
-  }
-  .flex-row-container .container-right {
-    display: none;
-  }
-  a#scroll-btn {
-    display: none;
-  }
-  .d-flex {
-    flex-direction: column !important;
-  }
-  .intro-left {
-    min-width: 90%;
-  }
-}
-
-
 .wrapper{
   max-width: 1080px;
   margin: 50px auto;
@@ -369,6 +335,50 @@ a#scroll-btn:after {
 .row section .bottom a:hover{
   transform: scale(0.97);
 }
+
+@media only screen and (max-width:425px) {
+  .container-left h1 {
+    font-size: 45px !important;
+  }
+  .h-100 {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-row-container {
+    height: 100%;
+  }
+  a#scroll-btn {
+    display: none;
+  }
+  .d-flex {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .flex-row-container {
+    height: 100%;
+    padding-left: 30px;
+  }
+  .flex-row-container .container-left {
+    width: 100%;
+  }
+  .flex-row-container .container-right {
+    display: none;
+  }
+  a#scroll-btn {
+    display: none;
+  }
+  .d-flex {
+    flex-direction: column !important;
+  }
+  .intro-left {
+    min-width: 90%;
+  }
+}
+
 @media(max-width: 790px){
   .wrapper .center-line{
     left: 40px;
@@ -386,6 +396,7 @@ a#scroll-btn:after {
     left: -60px;
   }
 }
+
 @media(max-width: 440px){
   .wrapper .center-line,
   .row section::before,
