@@ -22,21 +22,25 @@ const Main = () => {
     return (
         <div className="container-relative">
             <Head>
-                <title>Ryan Nograles</title>
+                <title>Dev Engine | Ryan Nograles</title>
                 <meta
                     name="description"
                     content="Personal web portfolio of Ryan Nograles"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <link
+                    rel="icon"
+                    href="/logoDevEngine.png
+                "
+                />
             </Head>
             <NavBar />
-            <Box component="main" sx={{ p: 3 }}>
+            <Box component="main">
                 <Toolbar />
                 <Home />
-                <WhatIDo />
-                <Experience />
+                {/* <WhatIDo />
+                <Experience /> */}
             </Box>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

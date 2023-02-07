@@ -12,6 +12,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { BiCodeAlt } from "react-icons/bi";
+import Image from "next/image";
 
 const drawerWidth = 240;
 const navItems = [];
@@ -27,7 +29,8 @@ export default function DrawerAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                ryan.dev
+                <BiCodeAlt />
+                Dev Engine
             </Typography>
             <Divider />
             <List>
@@ -67,7 +70,12 @@ export default function DrawerAppBar(props) {
                             display: { xs: "none", sm: "block" },
                         }}
                     >
-                        ryan.dev
+                        <Image
+                            src="/logoWithName.png"
+                            alt="Person with Logos"
+                            width={160}
+                            height={39}
+                        />
                     </Typography>
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                         {navItems.map((item) => (

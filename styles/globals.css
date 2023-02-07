@@ -25,18 +25,19 @@ h2 {
   margin-top: 0 !important;
 }
 .h-100 {
-  height: 100vh;
+  height: 100%;
 }
 nav {
   background-color: var(--bg-color) !important;
 }
 nav .logo {
-  margin: 0 0;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
-  font-weight: 600;
-  font-size: 25px;
-  font-family: 'Concert One', cursive;  
-  color: white;
+}
+nav .logo img {
+  margin-top: 8px;
+  margin-left: 15%;
 }
 .container-relative {
   position: relative;
@@ -158,7 +159,6 @@ a#scroll-btn:after {
 }
 .container-right {
   width: 50%;
-  margin-left: 20%;
 }
 .outline-btn{
   color: white;
@@ -168,8 +168,6 @@ a#scroll-btn:after {
   border-color: var(--color-highlight);
   color: var(--color-highlight);
 }
-
-
 .footer-container {
   text-align: center;
   padding: 30px 0;
@@ -340,8 +338,12 @@ a#scroll-btn:after {
   .container-left h1 {
     font-size: 45px !important;
   }
-  .h-100 {
-    height: 100%;
+  .mx-20 {
+    max-width: none;
+  }
+  .wrapper {
+    max-width: none;
+    width: 100%;
   }
 }
 
