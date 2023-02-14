@@ -2,14 +2,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 
 import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Home from "../components/Home";
-import WhatIDo from "../components/WhatIDo";
-import Experience from "../components/Experience";
 
 const Main = () => {
     useEffect(() => {
@@ -34,12 +29,11 @@ const Main = () => {
                 />
             </Head>
             <NavBar />
-            <Box component="main">
-                <Toolbar />
+            <div className="flex-nowrap">
                 <Home />
                 {/* <WhatIDo />
                 <Experience /> */}
-            </Box>
+            </div>
             {/* <Footer /> */}
         </div>
     );

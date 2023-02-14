@@ -1,34 +1,27 @@
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import { SiNestjs } from "react-icons/si";
 
 const BackendCard = () => {
-    const theme = useTheme();
-
     return (
-        <Card
+        <div
             sx={{ display: "flex", padding: 2, margin: 2 }}
             data-aos="fade-left"
         >
             <div className="box-icon-left-container">
                 <SiNestjs style={{ height: 70, width: 70 }} />
             </div>
-            <Box
+            <div
                 sx={{
                     justifyContent: "center",
                 }}
             >
-                <CardContent sx={{ alignItems: "center" }}>
-                    <Typography component="div" variant="h5">
+                <div sx={{ alignItems: "center" }}>
+                    <div component="div" variant="h5">
                         <b style={{ fontFamily: "poppins" }}>
                             Backend Development
                         </b>
-                    </Typography>
-                    <Typography
+                    </div>
+                    <div
                         variant="subtitle1"
                         color="text.secondary"
                         component="div"
@@ -40,10 +33,10 @@ const BackendCard = () => {
                         <span className="highlight">Node.JS</span>, and{" "}
                         <span className="highlight">SpringBoot</span>. on top of
                         <span className="highlight">Java</span>.
-                    </Typography>
-                </CardContent>
-            </Box>
-        </Card>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 export default BackendCard;

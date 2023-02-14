@@ -20,7 +20,7 @@ const Page404 = () => {
             <p>
                 Go back to the{" "}
                 <Link href="/">
-                    <a>Homepage</a>
+                    Homepage
                 </Link>
             </p>
         </div>

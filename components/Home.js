@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Home = () => {
     return (
-        <div className="flex-row-container">
-            <div data-aos="fade-right" className="container-left">
+        <div className="flex items-center justify-center">
+            <div data-aos="fade-right" className="">
                 <p>Hi there, I am</p>
                 <div className="line"></div>
                 <h1>Ryan</h1>
@@ -23,7 +23,7 @@ const Home = () => {
                     - Working for Accenture as a <b>Software Engineer</b>.
                 </span>
             </div>
-            <div data-aos="fade-left" className="container-right">
+            <div data-aos="fade-left" className="">
                 <Image
                     src="/personWithLogos.png"
                     className="hero-image"
