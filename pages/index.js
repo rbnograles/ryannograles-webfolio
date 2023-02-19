@@ -15,7 +15,7 @@ const Main = () => {
     }, []);
 
     return (
-        <div className="container-relative">
+        <div>
             <Head>
                 <title>Dev Engine | Ryan Nograles</title>
                 <meta
@@ -29,12 +29,7 @@ const Main = () => {
                 />
             </Head>
             <NavBar />
-            <div className="flex-nowrap">
-                <Home />
-                {/* <WhatIDo />
-                <Experience /> */}
-            </div>
-            {/* <Footer /> */}
+            <Home />
         </div>
     );
 };

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Home = () => {
     return (
-        <div className="flex items-center justify-center">
-            <div data-aos="fade-right" className="">
+        <div className="flex items-center justify-center bg-black h-screen">
+            <div>
                 <p>Hi there, I am</p>
                 <div className="line"></div>
                 <h1>Ryan</h1>
@@ -23,13 +23,13 @@ const Home = () => {
                     - Working for Accenture as a <b>Software Engineer</b>.
                 </span>
             </div>
-            <div data-aos="fade-left" className="">
+            <div>
                 <Image
-                    src="/personWithLogos.png"
-                    className="hero-image"
+                    src="/me.jpg"
+                    className="border-radius"
                     alt="Person with Logos"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                 />
             </div>
             <a id="scroll-btn"></a>

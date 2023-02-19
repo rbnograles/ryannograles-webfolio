@@ -17,14 +17,12 @@ html {
   --bg-white: #fff;
   --color-highlight: rgb(255, 168, 6);
 }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: var(--bg-color);
   color: white;
- 
 }
-a {
-  text-decoration: none;
-}
+
