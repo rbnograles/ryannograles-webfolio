@@ -2,31 +2,18 @@ import Image from "next/image";
 
 const Home = () => {
     return (
-        <div className="flex items-center justify-center bg-black h-screen">
-            <div>
-                <p>Hi there, I am</p>
-                <div className="line"></div>
-                <h1>Ryan</h1>
-                <h1>Nograles.</h1>
-                <p>
-                    A <b>Software Engineer</b> based in the Philippines.
+        <div className="flex items-center justify-center md:flex-row  bg-black h-screen">
+            <div className="md:w-2/4 md:mr-5">
+                <p className="text-4xl font-bold mb-4">Hi, I am Ryan Nograles!</p>
+                <p className="text-md mb-4">
+                    I am a software engineer based in the Philippines with more than 3 years of experience in the industry.
                 </p>
-                <span>
-                    - I have 3 years experience working as a software engineer.
-                </span>
-                <br />
-                <span>
-                    - A <b>Google Cloud Certified Associate Cloud Engineer</b>.
-                </span>
-                <br />
-                <span>
-                    - Working for Accenture as a <b>Software Engineer</b>.
-                </span>
+                <p className="text-md mb-4">I specialized in full stack development, and I am passionate about helping individuals and businesses build a strong online presence.</p>
             </div>
-            <div>
+            <div className="hidden md:flex md:w-1/4 justify-center items-center">
                 <Image
                     src="/me.jpg"
-                    className="border-radius"
+                    className=""
                     alt="Person with Logos"
                     width={200}
                     height={200}

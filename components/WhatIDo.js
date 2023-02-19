@@ -3,7 +3,7 @@ import BackendCard from "./utils/BackendCard";
 
 const WhatIDo = () => {
     return (
-        <div className="d-flex h-100 justify-content-center">
+        <div className="h-screen">
             <section className="intro-left">
                 <h1>What I Do?</h1>
                 <p>
@@ -15,8 +15,8 @@ const WhatIDo = () => {
                 </p>
             </section>
             <section>
-                <BackendCard />
-                <FrontendCard />
+                {/* <BackendCard />
+                <FrontendCard /> */}
             </section>
         </div>
     );

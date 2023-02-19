@@ -5,6 +5,7 @@ import Head from "next/head";
 
 import NavBar from "../components/Navbar";
 import Home from "../components/Home";
+import WhatIDo from "../components/WhatIDo";
 
 const Main = () => {
     useEffect(() => {
@@ -30,6 +31,7 @@ const Main = () => {
             </Head>
             <NavBar />
             <Home />
+            <WhatIDo/>
         </div>
     );
 };
